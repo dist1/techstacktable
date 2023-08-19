@@ -1,0 +1,157 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  background-image: url('pexels-johannes-plenio-1103970.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  border: 1px solid #d1d1d1;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Professional color scheme */
+th, td {
+  color: #333;
+}
+
+th {
+  background-color: #f8f8f8;
+}
+
+/* Alternating row colors */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Hover effect */
+th:hover, td:hover {
+  color: #007bff;
+}
+
+.dropdown {
+	display: inline-block;
+	cursor: pointer;
+}
+
+.dropdown-btn {
+	background-color: #007BFF;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.dropdown-btn:hover {
+	background-color: #fc036b;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 240px; /* Increased width for longer rows */
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown.active .dropdown-content {
+	display: block;
+}
+
+.dropdown-content ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.dropdown-content li {
+	padding: 12px;
+	text-align: left;
+	border-bottom: 1px solid #ddd; /* Add separator between rows */
+}
+
+.dropdown-content li:last-child {
+	border-bottom: none; /* Remove separator for last row */
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	padding: 10px 0;
+}
+
+nav li {
+	margin: 0 20px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #007BFF;
+	transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+	text-decoration: none;
+    background-color: #fc036b;
+}
+
+nav .active {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+section {
+	display: none;
+	padding: 20px;
+}
+
+/* Create a button press effect on click */
+.button {
+    transition: transform 0.2s ease-in-out;
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+#closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+}
